@@ -1,0 +1,86 @@
+/* App.css */
+
+/* Login button */
+.login-form button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px 0; /* Add margin to separate it from the inputs */
+  cursor: pointer;
+  border-radius: 4px; /* Add border-radius for rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Social login buttons */
+.social-login button {
+  background-color: #3b5998; /* Facebook blue */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 10px; /* Add margin between buttons */
+  cursor: pointer;
+  border-radius: 4px; /* Add border-radius for rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.social-login button.google-login {
+  background-color: #db4437; /* Google red */
+}
+
+.social-login button.twitter-login {
+  background-color: #1da1f2; /* Twitter blue */
+}
+
+.social-login button:hover {
+  opacity: 0.8; /* Reduce opacity on hover for all social login buttons */
+}
+
+/* Adjustments to move login and password input boxes to the next line */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  display: block; /* Display inputs as block-level elements */
+  width: calc(100% - 40px); /* Full width with padding */
+  padding: 12px 20px; /* Padding for inputs */
+  margin: 10px auto; /* Center inputs and add margin */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Add border-radius for rounded corners */
+  font-size: 18px;
+}
+
+/* Background and layout adjustments */
+.app {
+  background-image: url('background.jpg'); /* Adjust the path to your background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for login form */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-login {
+  margin-top: 20px; /* Add margin above social login buttons */
+}
